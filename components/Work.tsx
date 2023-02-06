@@ -12,7 +12,7 @@ const Work = ({ works, featured }: any) => {
         <h2>Work</h2>
       </div>
 
-      <Featured featured={works} />
+      <Featured featured={featured} />
 
       {/* <div className="works__container">
         {works.map((work: any, index: any) => (

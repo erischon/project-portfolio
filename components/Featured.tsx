@@ -10,8 +10,6 @@ const Featured = ({ featured }: any) => {
     <>
       {featured.slice(0, 3).map((work: any, index: any) => (
         <article key={index} className="featured" id="Work">
-          {/* <h3 className="featured__title">En avant</h3> */}
-
           <div className="featured__container">
             <div className="featured__left">
               <h3 className="featured__name">{work.title}</h3>
@@ -41,14 +39,10 @@ const Featured = ({ featured }: any) => {
             </div>
 
             <div className="featured__image-container">
-              <a
-                href={featured[0].projectLink}
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href={work.projectLink} target="_blank" rel="noreferrer">
                 <div className="featured__image-box">
                   <Image
-                    src={urlFor(featured[0].imgUrl).url()!}
+                    src={urlFor(work.imgUrl).url()!}
                     alt=""
                     layout="fill"
                     objectFit="cover"

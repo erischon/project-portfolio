@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
 };
 
@@ -9,4 +9,4 @@ const images = {
   imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
 };
 
-module.exports = { nextConfig, images };
+module.exports = { images };

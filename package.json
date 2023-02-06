@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/codemod": "^13.1.6",
     "@sanity/image-url": "^1.0.1",
     "framer-motion": "^6.3.4",
     "next": "^13.1.6",
