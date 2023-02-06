@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { IoClose } from "react-icons/io5";
 import { RiMenu5Fill } from "react-icons/ri";
 import { FiTwitter, FiLinkedin, FiGithub } from "react-icons/fi";
