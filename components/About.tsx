@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { urlFor } from "../lib/sanity";
 
-import me from "../public/images/erischon_a.png";
+import me from "../public/images/avatar_erischon.png";
 
 const About = () => {
   return (

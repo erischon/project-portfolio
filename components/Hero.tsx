@@ -5,7 +5,7 @@ const Hero = () => {
     <section className="hero font-sans">
       <div className="hero__container">
         <div className="hero__title">
-          <p className="">Bonjour, je suis</p>
+          <p className="hero__intro text--secondary">Bonjour, je suis</p>
 
           <h2 className="">Eri Schön.</h2>
 
