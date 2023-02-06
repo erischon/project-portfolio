@@ -12,9 +12,9 @@ const Work = ({ works, featured }: any) => {
         <h2>Work</h2>
       </div>
 
-      <Featured featured={featured} />
+      <Featured featured={works} />
 
-      <div className="works__container">
+      {/* <div className="works__container">
         {works.map((work: any, index: any) => (
           <div key={index} className="work__card">
             <div>
@@ -46,7 +46,7 @@ const Work = ({ works, featured }: any) => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };
