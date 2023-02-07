@@ -1,16 +1,6 @@
 import type { NextPage } from "next";
 import { client, urlFor } from "../lib/sanity";
-import Script from "next/script";
-
 import Head from "next/head";
-
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import About from "../components/About";
-import Services from "../components/Services";
-import Experience from "../components/Experience";
-import Work from "../components/Work";
-import Footer from "../components/Footer";
 
 const Home: NextPage = ({
   experiences,
@@ -22,57 +12,37 @@ const Home: NextPage = ({
   const seoData = seo[0];
 
   return (
-    <div>
-      <Head>
-        <meta charSet="UTF-8" />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <>
+      {/* <!--==================== HEADER ====================--> */}
+      <header className="header" id="header"></header>
 
-        {/* SEO */}
-        <meta name="description" content={seoData.description} />
-        <meta name="image" content={seoData.image} />
+      {/* <!--==================== MAIN ====================--> */}
+      <main className="main">
+        {/* <!--==================== HOME ====================--> */}
+        <section className="home section" id="home"></section>
 
-        <meta property="og:title" content={seoData.title} />
-        <meta property="og:description" content={seoData.description} />
-        <meta property="og:image" content={urlFor(seoData.image).url()} />
-        <meta property="og:url" content={seoData.url} />
-        <meta property="og:type" content="website" />
+        {/* <!--==================== SKILLS ====================--> */}
+        <section className="skills section" id="skills"></section>
 
-        <meta name="twitter:creator" content={seoData.twitterUsername} />
-        <meta name="twitter:title" content={seoData.title} />
-        <meta name="twitter:description" content={seoData.description} />
-        <meta name="twitter:image" content={urlFor(seoData.image).url()} />
+        {/* <!--==================== QUALIFICATION ====================--> */}
+        <section className="qualification section" id="qualification"></section>
 
-        <title>Eri Schön</title>
-      </Head>
+        {/* <!--==================== SERVICES ====================--> */}
+        <section className="services section" id="services"></section>
 
-      {/* Global Site Tag (gtag.js) - Google Analytics */}
-      <Script
-        async
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-      />
-      <Script
-        id="googleAnalytics"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-              page_path: window.location.pathname,
-            });
-          `,
-        }}
-      />
+        {/* <!--==================== PROJECTS ====================--> */}
+        <section className="projects section" id="projects"></section>
 
-      <Header />
-      <Hero />
-      <About />
-      <Services services={services} />
-      <Experience experiences={experiences} />
-      <Work works={works} featured={featured} />
-      <Footer />
-    </div>
+        {/* <!--==================== TESTIMONIAL ====================--> */}
+        <section className="testimonial section"></section>
+
+        {/* <!--==================== CONTACT ====================--> */}
+        <section className="contact section" id="contact"></section>
+      </main>
+
+      {/* <!--==================== FOOTER ====================--> */}
+      <footer className="footer"></footer>
+    </>
   );
 };
 
