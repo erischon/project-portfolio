@@ -7,9 +7,9 @@ import Featured from "./Featured";
 
 const Work = ({ works, featured }: any) => {
   return (
-    <section className="section" id="Work">
+    <section className="section" id="Projets">
       <div className="container__header">
-        <h2>Work</h2>
+        <h2>Projets</h2>
       </div>
 
       <Featured featured={featured} />

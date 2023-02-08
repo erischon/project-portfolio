@@ -7,7 +7,7 @@ import { FiTwitter, FiLinkedin, FiGithub } from "react-icons/fi";
 import logo from "../public/images/logo-fff-es.png";
 
 const Header = () => {
-  const menuLink = ["About", "Services", "Experience", "Work"];
+  const menuLink = ["About", "Services", "Experience", "Projets"];
 
   const [toggle, setToggle] = useState(false);
 

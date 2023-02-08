@@ -14,8 +14,6 @@ const Featured = ({ featured }: any) => {
             <div className="featured__left">
               <h3 className="featured__name">{work.title}</h3>
 
-              <p className="featured__desc">{work.description}</p>
-
               <div className="featured__tags">
                 {work.tags.map((tag: any, index: any) => (
                   <div key={index} className="featured__tag">
@@ -23,6 +21,8 @@ const Featured = ({ featured }: any) => {
                   </div>
                 ))}
               </div>
+
+              <p className="featured__desc">{work.description}</p>
 
               <div className="featured__icons">
                 <a href={work.codeLink} target="_blank" rel="noreferrer">

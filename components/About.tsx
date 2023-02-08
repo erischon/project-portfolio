@@ -27,12 +27,12 @@ const About = () => {
           </p>
 
           <div className="skills__container">
-            <p>En ce moment je travaille plutôt avec:</p>
+            <p>En ce moment j&apos;utilise plutôt :</p>
             <div className="skills__box">
               <div className="skills__list">
                 <ul>
                   <li>HTML</li>
-                  <li>Sass</li>
+                  <li>Tailwindcss</li>
                   <li>Javascript</li>
                 </ul>
               </div>
